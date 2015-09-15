@@ -4,7 +4,7 @@
 #include <QByteArray>
 #include <QDataStream>
 #include <QDateTime>
-#include "class_with_info.h"
+#include "model/class_with_info.h"
 client::client(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::client)
@@ -15,7 +15,6 @@ client::client(QWidget *parent) :
 client::~client()
 {
     delete ui;
-
 }
 
 void client::on_pushButton_clicked()

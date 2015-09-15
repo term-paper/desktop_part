@@ -9,6 +9,7 @@ class class_with_info : public SerializedBase
 public:
     Q_PROPERTY(int id_info READ readInfo WRITE SetInfo)//связывание set/get function с свойством
     Q_PROPERTY(double price READ GetPrice WRITE SetPrice)
+
     class_with_info();
     ~class_with_info();
 

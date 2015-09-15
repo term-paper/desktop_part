@@ -11,19 +11,14 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = client
 TEMPLATE = app
 
-
+DEPENDPATH += .
+INCLUDEPATH += .
+include(model/model.pri)
 SOURCES += main.cpp \
     client.cpp \
-    class_with_info.cpp \
-    serializedbase.cpp \
-
-
 
 HEADERS  += \
     client.h \
-    class_with_info.h \
-    serializedbase.h \
-
 
 FORMS += \
     client.ui
